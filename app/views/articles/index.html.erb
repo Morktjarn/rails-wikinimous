@@ -1,7 +1,9 @@
-<h3> Wikinimous</h3>
+
+<div class="d-flex p-2 bd-highlight row justify-content-center col-8">
 <ul>
   <% @articles.each do |article| %>
       <li><%= link_to article.title, article_path(article) %></li>
       <%= article.content %>
   <% end %>
 </ul>
+</div>
